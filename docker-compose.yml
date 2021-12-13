@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  thankmascalendar:
+    image: ${DOCKER_REGISTRY-}thankmascalendar
+    build:
+      context: .
+      dockerfile: ./Dockerfile
